@@ -1,0 +1,127 @@
+:root {
+  --main-bg-color: hsl(273, 75%, 66%);
+  --secondary-bg-color: hsl(240, 73%, 65%);
+
+  --main-font: "Kumbh Sans", sans-serif;
+  --body-font-size: 12px;
+
+  --main-font-color: hsl(238, 29%, 16%);
+  --secondary-font-color: hsl(14, 88%, 65%);
+
+  --neutral-text-vdgb: hsl(237, 12%, 33%);
+  --neutral-text-dgb: hsl(240, 6%, 50%);
+
+  --divider-color: hsl(240, 5%, 91%);
+
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+}
+
+html {
+  background: linear-gradient(
+    to bottom,
+    var(--main-bg-color),
+    var(--secondary-bg-color)
+  );
+  font-family: var(--main-font);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  min-width: 300px;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-size: var(--body-font-size);
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  color: var(--neutral-text-vdgb);
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button:hover {
+  color: var(--secondary-font-color);
+}
+button:active {
+  color: var(--main-font-color);
+  font-weight: 700;
+}
+
+p {
+  display: none;
+}
+
+.box {
+  background: #fff;
+  border-radius: 40px;
+  width: 1200px;
+  height: 600px;
+  box-shadow: 0px 32px 25px 0px rgba(50, 50, 50, 0.5);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 70%;
+}
+
+.panel {
+  border-bottom: 1px solid var(--divider-color);
+  padding-bottom: 5px;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.content {
+  width: 600px;
+  height: 100%;
+  padding: 80px;
+}
+
+.img-back {
+  position: absolute;
+  width: 2000px;
+  top: -360px;
+  left: -650px;
+}
+
+.img-box {
+  position: absolute;
+  left: 240px;
+  top: 45%;
+  z-index: 1;
+  width: 210px;
+}
+
+.img-woman {
+  position: absolute;
+  left: -100px;
+  top: 10%;
+  width: 650px;
+}
