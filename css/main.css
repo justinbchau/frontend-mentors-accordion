@@ -2,7 +2,7 @@
   --main-bg-color: hsl(273, 75%, 66%);
   --secondary-bg-color: hsl(240, 73%, 65%);
 
-  --main-font: "Kumbh Sans", sans-serif;
+  --main-font: 'Kumbh Sans', sans-serif;
   --body-font-size: 12px;
 
   --main-font-color: hsl(238, 29%, 16%);
@@ -112,9 +112,9 @@ p {
 }
 
 .img-box {
-  position: absolute;
-  left: 240px;
-  top: 45%;
+  position: relative;
+  left: 100px;
+  top: 6%;
   z-index: 1;
   width: 210px;
 }
