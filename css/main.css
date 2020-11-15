@@ -2,7 +2,7 @@
   --main-bg-color: hsl(273, 75%, 66%);
   --secondary-bg-color: hsl(240, 73%, 65%);
 
-  --main-font: "Kumbh Sans", sans-serif;
+  --main-font: 'Kumbh Sans', sans-serif;
   --body-font-size: 12px;
 
   --main-font-color: hsl(238, 29%, 16%);
@@ -169,7 +169,7 @@ button:active {
   .img-box {
     position: absolute;
     width: 30%;
-    top: 115px;
+    top: 78px;
     left: 50px;
   }
 
@@ -192,7 +192,7 @@ button:active {
     font-size: 30px;
     text-align: center;
     margin-top: 120px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   button {
