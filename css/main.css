@@ -2,7 +2,7 @@
   --main-bg-color: hsl(273, 75%, 66%);
   --secondary-bg-color: hsl(240, 73%, 65%);
 
-  --main-font: 'Kumbh Sans', sans-serif;
+  --main-font: "Kumbh Sans", sans-serif;
   --body-font-size: 12px;
 
   --main-font-color: hsl(238, 29%, 16%);
@@ -46,6 +46,7 @@ button {
   outline: none;
   color: var(--neutral-text-vdgb);
   font-size: 18px;
+  font-weight: 400;
   margin: 20px 0;
   padding: 0;
   width: 100%;
@@ -64,8 +65,9 @@ button:active {
   font-weight: 700;
 }
 
-p {
-  display: none;
+.active {
+  color: var(--main-font-color);
+  font-weight: 700;
 }
 
 .box {
@@ -88,18 +90,31 @@ p {
 }
 
 .panel {
+  padding-bottom: 20px;
+  display: none;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--neutral-text-dgb);
+  line-height: 1.5;
+}
+
+.divider {
   border-bottom: 1px solid var(--divider-color);
-  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.reverse {
+  transform: rotate(180deg);
 }
 
 .heading {
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .content {
-  width: 600px;
+  width: 50%;
   height: 100%;
   padding: 80px;
 }
@@ -113,10 +128,10 @@ p {
 
 .img-box {
   position: relative;
-  left: 100px;
-  top: 6%;
+  left: 80px;
+  top: 8%;
   z-index: 1;
-  width: 210px;
+  width: 230px;
 }
 
 .img-woman {
@@ -124,4 +139,68 @@ p {
   left: -100px;
   top: 10%;
   width: 650px;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    display: flex;
+  }
+
+  .accordion {
+    display: block;
+  }
+
+  .box {
+    justify-content: center;
+    margin-top: 70px;
+    width: 90vw;
+    flex-direction: row;
+    height: 70vh;
+    overflow: visible;
+    height: 600px;
+  }
+
+  .img-woman {
+    width: 75%;
+    left: auto;
+    top: -20%;
+  }
+
+  .img-box {
+    position: absolute;
+    width: 30%;
+    top: 115px;
+    left: 50px;
+  }
+
+  .img-back {
+    width: 80%;
+    left: auto;
+    top: -10px;
+  }
+
+  .content {
+    display: block;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .heading {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 50px;
+  }
+
+  button {
+    font-size: 15px;
+    margin: 20px 0;
+  }
+
+  .divider {
+    margin-bottom: 0;
+  }
 }
